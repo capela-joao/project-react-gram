@@ -11,4 +11,93 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+a,
+nav button {
+  text-decoration: none;
+  background-color: none;
+  border: none;
+  color: #fff;
+  transition: 0.4s;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+a::hover,
+navbutton::hover {
+  color: #cecece;
+}
+
+form {
+  max-width: 40%;
+  margin: 0 auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+label span {
+  margin-bottom: 0.1em;
+  font-weight: bold;
+  text-align: left;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: transparent;
+  padding: 10px;
+}
+
+button {
+  background-color: rgb(75, 105, 105);
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  opacity: 90%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  opacity: 100%;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.container .error {
+  color: red;
+  background-color: #242424;
+  border: 1px solid red;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }

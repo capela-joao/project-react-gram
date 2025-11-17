@@ -17,8 +17,6 @@
 .nav a {
   margin: 0 10px;
   padding: 5px;
-  text-decoration: none;
-  color: #fff;
   opacity: 90%;
 }
 
@@ -38,7 +36,6 @@
 }
 
 .links li a {
-  text-decoration: none;
   padding: 0.4em 0.6em;
 }
 
@@ -48,5 +45,6 @@
 }
 
 .links li a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
   opacity: 100%;
 }
