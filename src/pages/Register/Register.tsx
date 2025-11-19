@@ -90,12 +90,12 @@ const Register = () => {
           />
         </label>
         {!loading && (
-          <button className={styles.btn} type="submit">
+          <button className="btn" type="submit">
             Cadastrar
           </button>
         )}
         {loading && (
-          <button className={styles.btn} type="submit" disabled>
+          <button className="btn" type="submit" disabled>
             Aguarde...
           </button>
         )}

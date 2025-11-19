@@ -70,7 +70,14 @@ textarea {
   padding: 10px;
 }
 
-button,
+button {
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 15px;
+  text-align: center;
+  background-color: transparent;
+}
+
 .btn {
   background-color: rgb(75, 105, 105);
   color: #fff;
@@ -85,12 +92,10 @@ button,
   transition: 0.4s;
 }
 
-button:hover,
 .btn:hover {
   opacity: 100%;
 }
 
-button:disabled,
 .btn:disabled {
   background-color: gray;
   cursor: not-allowed;

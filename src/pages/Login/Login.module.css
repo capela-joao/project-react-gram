@@ -1,0 +1,15 @@
+.login {
+  text-align: center;
+}
+
+.login p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form label {
+  padding: 10px 0;
+}
+
+.form button {
+  margin-top: 1em;
+}
