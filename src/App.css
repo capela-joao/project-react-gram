@@ -1,7 +1,9 @@
-.container {
-  margin: 0 auto;
-  padding: 20px;
-  height: calc(100dvh - (60px + 40px));
-  padding-top: 80px;
-  min-height: calc(100dvh - 60px);
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
 }
