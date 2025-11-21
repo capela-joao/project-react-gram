@@ -7,13 +7,16 @@ import PostDetail from '../../components/PostDetail/PostDetail';
 
 const Home = () => {
   const [query, setQuery] = useState('');
-
+  const Navigate = useNavigate();
   const { documents: posts, loading } =
     useFetchDocuments('posts');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Pesquisar por:', query);
+
+    if (query) {
+      return Navigate(`/search?q=${query}`);
+    }
   };
 
   return (
